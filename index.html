@@ -102,7 +102,38 @@
       .hero-links { justify-content: center; }
       .nav-links { display: none; }
     }
-  </style>
+  
+    /* ── CONTRIBUTIONS ── */
+    .contributions-section { padding: 70px 5%; background: var(--bg-deep); }
+    .contrib-list { display: flex; flex-direction: column; gap: 24px; max-width: 900px; }
+    .contrib-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 30px;
+      transition: border-color .2s;
+    }
+    .contrib-card:hover { border-color: var(--border-hi); }
+    .contrib-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .contrib-badge.keynote { background: rgba(196,160,80,0.18); color: var(--gold-light); border: 1px solid var(--border-hi); }
+    .contrib-badge.judge { background: rgba(78,205,196,0.15); color: var(--cyan); border: 1px solid rgba(78,205,196,0.35); }
+    .contrib-title { font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 6px; line-height: 1.4; }
+    .contrib-org { font-size: 0.85rem; color: var(--gold); margin-bottom: 12px; }
+    .contrib-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px; }
+    .contrib-meta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .contrib-link { font-size: 0.85rem; color: var(--cyan); font-weight: 500; }
+    .contrib-link:hover { color: var(--gold); }
+    .contrib-tag { font-size: 0.78rem; padding: 3px 10px; border-radius: 4px; background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text-dim); }
+</style>
 </head>
 <body>
 <nav>
@@ -112,6 +143,7 @@
     <a href="#metrics">Metrics</a>
     <a href="#publications">Publications</a>
     <a href="#research">Research</a>
+    <a href="#contributions">Contributions</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -378,6 +410,37 @@
         <div class="contact-value"><a href="https://www.webofscience.com/wos/author/record/OOK-9153-2025" target="_blank">OOK-9153-2025</a></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- CONTRIBUTIONS & INVITED ROLES -->
+<section class="contributions-section" id="contributions">
+  <h2 class="section-title">Contributions &amp; Invited Roles</h2>
+  <div class="section-divider"></div>
+  <div class="contrib-list">
+
+    <div class="contrib-card">
+      <div class="contrib-badge keynote">Keynote Speaker</div>
+      <div class="contrib-title">4th International Conference on Applied Data Science and Smart Systems (ADSSS-2025)</div>
+      <div class="contrib-org">Chitkara University, Chandigarh-Patiala National Highway (NH-64), Rajpura, Punjab, India</div>
+      <div class="contrib-desc">Invited as a distinguished keynote speaker at ADSSS-2025. Delivered an expert talk drawing on over nine years of industry experience in cybersecurity, healthcare IT, and AI-driven solutions, addressing today's most pressing challenges in secure system architecture, intrusion detection, and next-generation cybersecurity for real-world industry applications.</div>
+      <div class="contrib-meta">
+        <a href="https://ca.chitkara.edu.in/adsssconf2025/speaker-details_ramya.html" target="_blank" class="contrib-link">View Speaker Profile &#8599;</a>
+      </div>
+    </div>
+
+    <div class="contrib-card">
+      <div class="contrib-badge judge">Session Judge</div>
+      <div class="contrib-title">IEEE International Conference on Innovate for Humanitarian: Tech Solutions for Global Challenges (ICIH 2025)</div>
+      <div class="contrib-org">IEEE &mdash; International Conference</div>
+      <div class="contrib-desc">Served as Session Judge at IEEE ICIH 2025. Moderated and facilitated research presentations focused on technology-driven solutions for global humanitarian challenges, evaluating innovative submissions at the intersection of technology and humanitarian impact.</div>
+      <div class="contrib-meta">
+        <span class="contrib-tag">IEEE</span>
+        <span class="contrib-tag">Humanitarian Technology</span>
+        <span class="contrib-tag">Session Moderator</span>
+      </div>
+    </div>
+
   </div>
 </section>
 <footer>
